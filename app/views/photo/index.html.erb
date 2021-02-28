@@ -24,7 +24,7 @@
 <% @photo.each do |photo| %>
 
 
-  <p><%=image_tag(photo.file_name) %></p>
+  <p><%=image_tag("https://photosite-manish.s3.amazonaws.com/p4images/"+photo.file_name) %></p>
   <p> Photo creation time is : <%= photo.date_time %></p>
   </br>
 
